@@ -14,7 +14,7 @@ require('fs').readdir("./dictionary/", (err, files) => {
                 process.exit();
             }
 
-            if(end === 17 && !data.success) {
+            if(end === files.length && !data.success) {
                 console.log(`\x1b[31m> \x1b[0mPassword not found\n`);
                 process.exit();
             }
